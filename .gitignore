@@ -38,3 +38,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+# Test DB data
+.db
