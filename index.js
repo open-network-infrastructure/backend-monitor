@@ -58,9 +58,9 @@ function monitorHttpService(serviceName, url) {
         fields: {
           url: url,
           status_code: response.statusCode,
-          timing_total: timings.total,
-          timing_dns: timings.dns,
-          timing_firstbyte: timings.firstByte
+          timing_total: timings.phases.total,
+          timing_dns: timings.phases.dns,
+          timing_firstbyte: timings.phases.firstByte
         }
       }])
       console.log(`Check completed: ${serviceName}=${response.statusCode}`)
