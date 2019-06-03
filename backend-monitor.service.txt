@@ -1,0 +1,13 @@
+[Unit]
+Description=Swiss Backend Monitor
+AssertPathExists=/home/ubuntu/backend-monitor
+
+[Service]
+WorkingDirectory=/home/ubuntu/backend-monitor
+ExecStart=/usr/bin/npm start
+Restart=always
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
