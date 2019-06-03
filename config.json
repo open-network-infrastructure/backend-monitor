@@ -12,6 +12,10 @@
       "protocol": "multi-protocol",
       "router": "ch"
     },
+    "kst_gw_campus": {
+      "protocol": "mqtt",
+      "router": "ch"
+    },
     "eui-fffeb827ebf7e594": {
       "protocol": "packet-forwarder",
       "router": "eu"
