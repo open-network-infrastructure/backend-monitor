@@ -1,0 +1,16 @@
+{
+  "name": "backend-monitor",
+  "version": "1.0.0",
+  "description": "Monitor the Swiss backend, operated by SWITCH/ONIA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Gonzalo Casas <gonzalocasas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@szmarczak/http-timer": "^2.0.0",
+    "influx": "^5.1.0",
+    "node-fetch": "^2.6.0"
+  }
+}

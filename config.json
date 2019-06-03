@@ -1,0 +1,31 @@
+{
+  "gateways": {
+    "eui-58a0cbfffe80056c": {
+      "protocol": "basic-station",
+      "router": "ch"
+    },
+    "eui-b827ebfffe4e1ce7": {
+      "protocol": "packet-forwarder",
+      "router": "ch"
+    },
+    "zone11_gw_01": {
+      "protocol": "multi-protocol",
+      "router": "ch"
+    },
+    "eui-fffeb827ebf7e594": {
+      "protocol": "packet-forwarder",
+      "router": "eu"
+    }
+  },
+  "devices": {
+
+  },
+  "httpServices": {
+    "console": {
+      "url": "https://console.ttn.opennetworkinfrastructure.org/"
+    },
+    "info": {
+      "url": "https://opennetworkinfrastructure.org/"
+    }
+  }
+}
