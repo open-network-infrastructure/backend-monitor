@@ -2,23 +2,38 @@
   "gateways": {
     "eui-58a0cbfffe80056c": {
       "protocol": "basic-station",
-      "router": "ch"
+      "router": "ch",
+      "description": "ttn-indoor-gw-2019"
     },
     "eui-b827ebfffe4e1ce7": {
       "protocol": "packet-forwarder",
-      "router": "ch"
+      "router": "ch",
+      "description": "UZH - ZI - NW, uzhloragwbot"
     },
     "zone11_gw_01": {
       "protocol": "multi-protocol",
-      "router": "ch"
+      "router": "ch",
+      "description": "Horchental - running balenaCloud"
     },
     "kst_gw_campus": {
       "protocol": "mqtt",
-      "router": "ch"
+      "router": "ch",
+      "description": "Kantonsschule Trogen, Campus"
+    },
+    "eui-b827ebfffe97f686": {
+      "protocol": "packet-forwarder",
+      "router": "ch",
+      "description": "ETH Zürich LoRaWAN Gateway on CHN Building"
+    },
+    "eui-b827ebfffe4ad9d9": {
+      "protocol": "packet-forwarder",
+      "router": "ch",
+      "description": "ETH Zürich LoRaWAN Gateway on HPP Building"
     },
     "eui-fffeb827ebf7e594": {
       "protocol": "packet-forwarder",
-      "router": "eu"
+      "router": "eu",
+      "description": "Lorica One @ Zurich"
     }
   },
   "devices": {
