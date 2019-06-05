@@ -1,8 +1,10 @@
 const HealthCheck = require('./healthCheck')
-const config = require('./config')
 const storage = require('./storage')
 const gatewayMonitor = require('./checkGateways')
 const httpServiceMonitor = require('./checkHttpServices')
+const appMonitor = require('./checkApplications')
+const config = require('./config')
+const env = require('./.env')
 
 const POLL_INTERVAL_IN_MS = 60 * 3 * 1000
 
@@ -37,6 +39,11 @@ function startConfiguredMonitors() {
     })
 
     delayInMs += 1000;
+  }
+
+  for (let appId in env.applications) {
+    let accessKey = env.applications[appId]
+    appMonitor.check(appId, accessKey, storage.writePoints)
   }
 
 }

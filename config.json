@@ -36,9 +36,6 @@
       "description": "Lorica One @ Zurich"
     }
   },
-  "devices": {
-
-  },
   "httpServices": {
     "console": {
       "url": "https://console.ttn.opennetworkinfrastructure.org/"

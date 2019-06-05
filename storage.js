@@ -32,6 +32,17 @@ const db = new Influx.InfluxDB({
         'name'
       ]
     },
+    {
+      measurement: 'applications',
+      fields: {
+        device_counter: Influx.FieldType.INTEGER,
+        ch_router_gw: Influx.FieldType.BOOLEAN
+      },
+      tags: [
+        'app_id',
+        'dev_id'
+      ]
+    },
   ]
 });
 
